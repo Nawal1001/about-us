@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | DecoraHub Luxury Furniture</title>
+   <script src="tailwind-config.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script>
+      function toggleNav() {
+        document.getElementById("mobNav").classList.toggle("hidden");
+      }
+      function darkTh() {
+        document.getElementById("da-li").classList.toggle("dark");
+      }
+    </script>
+</head>
+<body class="bg-bglight text-txtprimary dark:bg-bgdark dark:text-txtprimarydark transition-colors duration-300">
+
+    <nav class="border-b border-gray-200 dark:border-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="serif text-3xl font-bold tracking-widest text-primary">DecoraHub</h1>
+            <div class="hidden md:flex space-x-8 uppercase text-xs tracking-widest font-semibold">
+                <a href="#" class="hover:text-secondary">Home</a>
+                <a href="#" class="text-secondary border-b border-secondary">Collections</a>
+                <a href="#" class="hover:text-secondary">Bespoke</a>
+                <a href="#" class="hover:text-secondary">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h2 class="serif text-4xl md:text-5xl mb-4">Curated Collections</h2>
+        <p class="text-txtsecondary dark:text-txtsecondarydark max-w-2xl mx-auto">
+            Discover a world of refined elegance. From mid-century modern classics to contemporary minimalist masterpieces, find the piece that speaks to your soul.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="flex flex-col lg:flex-row gap-12">
+            
+            <aside class="w-full lg:w-64 space-y-10">
+                <div>
+                    <h4 class="serif text-xl mb-4 border-b border-primary/20 pb-2">Category</h4>
+                    <ul class="space-y-3 text-sm font-medium text-txtsecondary dark:text-txtsecondarydark">
+                        <li class="flex justify-between items-center text-primary dark:text-txtprimarydark italic font-semibold">
+                            <span>All Furniture</span>
+                            <span>(42)</span>
+                        </li>
+                        <li class="flex justify-between items-center hover:text-primary cursor-pointer transition">
+                            <span>Living Room</span>
+                            <span>(12)</span>
+                        </li>
+                        <li class="flex justify-between items-center hover:text-primary cursor-pointer transition">
+                            <span>Dining & Kitchen</span>
+                            <span>(8)</span>
+                        </li>
+                        <li class="flex justify-between items-center hover:text-primary cursor-pointer transition">
+                            <span>Bedroom</span>
+                            <span>(15)</span>
+                        </li>
+                        <li class="flex justify-between items-center hover:text-primary cursor-pointer transition">
+                            <span>Home Office</span>
+                            <span>(7)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="serif text-xl mb-4 border-b border-primary/20 pb-2">Material</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 border border-primary/30 rounded-full text-xs hover:bg-primary hover:text-white cursor-pointer transition">Solid Oak</span>
+                        <span class="px-3 py-1 border border-primary/30 rounded-full text-xs hover:bg-primary hover:text-white cursor-pointer transition">Velvet</span>
+                        <span class="px-3 py-1 border border-primary/30 rounded-full text-xs hover:bg-primary hover:text-white cursor-pointer transition">Italian Leather</span>
+                        <span class="px-3 py-1 border border-primary/30 rounded-full text-xs hover:bg-primary hover:text-white cursor-pointer transition">Brass</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="category-card relative group overflow-hidden rounded-sm cursor-pointer shadow-lg bg-white dark:bg-headerfooterdark">
+                        <div class="h-[400px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" alt="Living Room" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="p-6">
+                            <h3 class="serif text-2xl text-txtprimary dark:text-txtprimarydark">Living Room</h3>
+                            <p class="text-secondary uppercase text-xs tracking-widest mt-1">Sophistication & Comfort</p>
+                            <div class="mt-4 flex items-center text-sm font-bold text-primary dark:text-secondary group-hover:translate-x-2 transition-transform">
+                                EXPLORE COLLECTION <span class="ml-2">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card relative group overflow-hidden rounded-sm cursor-pointer shadow-lg bg-white dark:bg-headerfooterdark">
+                        <div class="h-[400px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1505691938895-1758d7eaa511?auto=format&fit=crop&q=80&w=800" alt="Bedroom" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="p-6">
+                            <h3 class="serif text-2xl text-txtprimary dark:text-txtprimarydark">The Bedroom</h3>
+                            <p class="text-secondary uppercase text-xs tracking-widest mt-1">Peaceful Sanctuaries</p>
+                            <div class="mt-4 flex items-center text-sm font-bold text-primary dark:text-secondary group-hover:translate-x-2 transition-transform">
+                                EXPLORE COLLECTION <span class="ml-2">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card relative group overflow-hidden rounded-sm cursor-pointer shadow-lg bg-white dark:bg-headerfooterdark">
+                        <div class="h-[400px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1617806118233-18e1674745be?auto=format&fit=crop&q=80&w=800" alt="Dining Room" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="p-6">
+                            <h3 class="serif text-2xl text-txtprimary dark:text-txtprimarydark">Dining & Kitchen</h3>
+                            <p class="text-secondary uppercase text-xs tracking-widest mt-1">Exquisite Hosting</p>
+                            <div class="mt-4 flex items-center text-sm font-bold text-primary dark:text-secondary group-hover:translate-x-2 transition-transform">
+                                EXPLORE COLLECTION <span class="ml-2">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card relative group overflow-hidden rounded-sm cursor-pointer shadow-lg bg-white dark:bg-headerfooterdark">
+                        <div class="h-[400px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=800" alt="Home Office" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="p-6">
+                            <h3 class="serif text-2xl text-txtprimary dark:text-txtprimarydark">Home Office</h3>
+                            <p class="text-secondary uppercase text-xs tracking-widest mt-1">Inspired Productivity</p>
+                            <div class="mt-4 flex items-center text-sm font-bold text-primary dark:text-secondary group-hover:translate-x-2 transition-transform">
+                                EXPLORE COLLECTION <span class="ml-2">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="bg-primary py-20 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="serif text-3xl md:text-4xl mb-6 font-light italic">Need something truly unique?</h2>
+            <p class="text-white/80 mb-8 leading-relaxed">
+                Our artisans specialize in bespoke furniture design. From custom dimensions to exclusive material selections, we bring your specific vision to life.
+            </p>
+            <button class="px-10 py-4 border border-white text-white hover:bg-white hover:text-primary transition-all duration-300 font-bold tracking-widest uppercase text-xs">
+                Request a Consultation
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-headerfooterdark text-gray-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <h1 class="serif text-2xl font-bold text-white">DECORAHUB</h1>
+            <p class="text-sm">© 2025 DecoraHub Artisanal Furniture. Built for Elegance.</p>
+            <div class="flex gap-4">
+                <span class="hover:text-secondary cursor-pointer italic serif">Instagram</span>
+                <span class="hover:text-secondary cursor-pointer italic serif">Pinterest</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
