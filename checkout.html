@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | DecoraHub Luxury Furniture</title>
+    <script src="tailwind-config.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script>
+      function toggleNav() {
+        document.getElementById("mobNav").classList.toggle("hidden");
+      }
+      function darkTh() {
+        document.getElementById("da-li").classList.toggle("dark");
+      }
+    </script>
+</head>
+<body class="bg-bglight text-txtprimary dark:bg-bgdark dark:text-txtprimarydark transition-colors duration-300 min-h-screen">
+
+    <nav class="py-8 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-bgdark">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="serif text-2xl font-bold tracking-widest text-primary">DecoraHub</h1>
+            <a href="#" class="text-xs uppercase tracking-widest font-semibold hover:text-secondary flex items-center">
+                <span class="mr-2">←</span> Return to Cart
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 lg:py-20">
+        <div class="flex flex-col lg:flex-row gap-16">
+            
+            <div class="flex-1 space-y-12">
+                
+                <section>
+                    <div class="flex justify-between items-end mb-6">
+                        <h2 class="serif text-2xl font-medium">Contact Information</h2>
+                        <p class="text-xs text-txtsecondary">Already have an account? <a href="#" class="text-primary underline">Log in</a></p>
+                    </div>
+                    <input type="email" placeholder="Email Address" class="w-full p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:ring-1 focus:ring-primary transition">
+                </section>
+
+                <section>
+                    <h2 class="serif text-2xl font-medium mb-6">Shipping Address</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                        <input type="text" placeholder="Last Name" class="p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                        <input type="text" placeholder="Address" class="md:col-span-2 p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                        <input type="text" placeholder="Apartment, suite, etc. (optional)" class="md:col-span-2 p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                        <input type="text" placeholder="City" class="p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                        <input type="text" placeholder="Postal Code" class="p-4 bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm focus:border-primary">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="serif text-2xl font-medium mb-6">Shipping Method</h2>
+                    <div class="border border-gray-300 dark:border-gray-700 rounded-sm overflow-hidden">
+                        <label class="flex items-center justify-between p-5 cursor-pointer bg-white dark:bg-headerfooterdark border-b border-gray-200 dark:border-gray-700">
+                            <div class="flex items-center">
+                                <input type="radio" name="shipping" checked class="accent-primary w-4 h-4">
+                                <div class="ml-4">
+                                    <p class="font-medium">Standard Delivery</p>
+                                    <p class="text-xs text-txtsecondary">5-10 Business Days</p>
+                                </div>
+                            </div>
+                            <span class="font-bold">Rs. 490.00</span>
+                        </label>
+                        <label class="flex items-center justify-between p-5 cursor-pointer bg-white dark:bg-headerfooterdark">
+                            <div class="flex items-center">
+                                <input type="radio" name="shipping" class="accent-primary w-4 h-4">
+                                <div class="ml-4">
+                                    <p class="font-medium">White-Glove Delivery & Assembly</p>
+                                    <p class="text-xs text-txtsecondary">Room of choice setup & packaging removal</p>
+                                </div>
+                            </div>
+                            <span class="font-bold">Rs. 1990.00</span>
+                        </label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="serif text-2xl font-medium mb-2">Payment</h2>
+                    <p class="text-xs text-txtsecondary mb-6 italic">All transactions are secure and encrypted.</p>
+                    <div class="bg-white dark:bg-headerfooterdark border border-gray-300 dark:border-gray-700 rounded-sm p-6 space-y-4">
+                        <div class="flex justify-between items-center pb-4 border-b border-gray-100 dark:border-gray-800">
+                            <span class="font-bold text-sm">Credit Card</span>
+                            <div class="flex gap-2">
+                                <div class="w-8 h-5 bg-gray-200 rounded"></div>
+                                <div class="w-8 h-5 bg-gray-200 rounded"></div>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Card Number" class="w-full p-4 border border-gray-300 dark:border-gray-700 rounded-sm bg-transparent">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="Expiration (MM/YY)" class="p-4 border border-gray-300 dark:border-gray-700 rounded-sm bg-transparent">
+                            <input type="text" placeholder="Security Code" class="p-4 border border-gray-300 dark:border-gray-700 rounded-sm bg-transparent">
+                        </div>
+                    </div>
+                </section>
+
+                <button class="w-full py-5 bg-primary text-white font-bold tracking-[0.2em] uppercase text-sm shadow-xl hover:bg-secondary transition-all duration-300">
+                    Complete Purchase
+                </button>
+            </div>
+
+            <div class="w-full lg:w-[400px]">
+                <div class="sticky top-12 bg-white dark:bg-headerfooterdark p-8 border border-gray-200 dark:border-gray-800 rounded-sm shadow-sm">
+                    <h2 class="serif text-xl mb-8 pb-4 border-b border-gray-100 dark:border-gray-700">Order Summary</h2>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="relative w-20 h-20 bg-bglight rounded overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=200" class="w-full h-full object-cover">
+                                <span class="absolute -top-2 -right-2 w-6 h-6 bg-primary text-white text-[10px] flex items-center justify-center rounded-full">1</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-medium text-sm">Velvet Tufted Emerald Sofa</h4>
+                                <p class="text-xs text-txtsecondary italic">Finish: Dark Oak</p>
+                            </div>
+                            <p class="font-bold text-sm">Rs. 24,500.00</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-6 border-t border-gray-100 dark:border-gray-700">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-txtsecondary">Subtotal</span>
+                            <span>Rs. 24,500.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-txtsecondary">Shipping</span>
+                            <span>Rs.490.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-txtsecondary">Estimated Taxes</span>
+                            <span>Rs.1820.00</span>
+                        </div>
+                        <div class="flex justify-between text-xl font-bold pt-4 text-primary dark:text-txtprimarydark">
+                            <span class="serif">Total</span>
+                            <span>Rs.26,810.00</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-100 dark:border-gray-700 text-center space-y-4">
+                        <div class="flex justify-center gap-4 opacity-50 grayscale">
+                            <div class="text-[10px] border border-gray-400 px-2 py-1 rounded">SECURE SSL</div>
+                            <div class="text-[10px] border border-gray-400 px-2 py-1 rounded">2-YEAR WARRANTY</div>
+                        </div>
+                        <p class="text-[10px] uppercase tracking-widest text-txtsecondary">30-Day White Glove Returns</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-gray-200 dark:border-gray-800 text-center">
+        <p class="text-xs text-txtsecondary tracking-widest uppercase">
+            &copy; 2025 DecoraHub | Privacy Policy | Terms of Service
+        </p>
+    </footer>
+
+</body>
+</html>
